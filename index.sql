@@ -199,68 +199,68 @@ Para la tabla cliente deben crear 50 registros.
 CREATE DATABASE comercial;
 USE comercial;
 CREATE TABLE cliente(
-id_cliente INT (20) NOT NULL PRIMARY KEY,
-empresa VARCHAR (50) NOT NULL,
+id_cliente INT (20) UNIQUE PRIMARY KEY,
+empresa VARCHAR (50) UNIQUE NOT NULL,
 nombre VARCHAR(50) NOT NULL,
 apellido VARCHAR(50) NOT NULL,
-telefono INT (20) NOT NULL,
+telefono VARCHAR (20) NOT NULL,
 direccion VARCHAR (50) NOT NULL,
-deportamento VARCHAR (50 NOT NULL,)
+departamento VARCHAR (50) NOT NULL,
 pais VARCHAR (20) NOT NULL,
 empleado_atiende VARCHAR (50) NOT NULL,
 creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (1, 'ACME Corporation', 'John', 'Coral', 1234567890, 'Calle 34', 'Cundinamarca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (2, 'XYZ Inc.', 'Jane', 'Smith', 9876543210, 'Carrera 25', 'Valle del Cauca', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (3, 'ABC Corporation', 'David', 'Morales', 5555555555, 'Calle 53', 'Valle del Cauca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (4, '123 Industries', 'Sarah', 'Williams', 56745344574, 'Calle 64', 'Caldas', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (5, 'XYZ Ltd.', 'Michael', 'Jordan', 4757454434, 'Carrera 24', 'Valle del Cauca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (6, 'DEF Corporation', 'Emily', 'Wilson', 7568453665, 'Calle 3', 'Tolima', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (7, 'GHI Industries', 'Daniel', 'Hernandez', 3645768353, 'Avenida 25', 'Tolima', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (8, 'LMN Ltd.', 'Olivia', 'Morales', 4574676853, 'Avenida 2', 'Bolívar', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (9, 'PQR Corporation', 'Andrea', 'Cardenas', 54756967645, 'Calle 45', 'Risaralda', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (10, 'UVW Industries', 'Sophia', 'Del Valle', 765434486, 'Carrera 425', 'Nariño', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (1, 'ADA', 'John', 'Coral', '1234567890', 'Calle 34', 'Cundinamarca', 'Colombia', 'Alice');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (2, 'Aerosucre', 'Jane', 'Smith', '9876543210', 'Carrera 25', 'Valle del Cauca', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (3, 'Copa Airlines Colombia', 'David', 'Morales', '235678563', 'Calle 53', 'Valle del Cauca', 'Colombia', 'Maria');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (4, 'Arkas', 'Sarah', 'Williams', '56745344574', 'Calle 64', 'Caldas', 'Colombia', 'Andres');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (5, 'Avianca', 'Michael', 'Jordan', '4757454434', 'Carrera 24', 'Valle del Cauca', 'Colombia', 'Alicia');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (6, 'Cosmos', 'Emily', 'Wilson', '7568453665', 'Calle 3', 'Tolima', 'Colombia', 'Miguel');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (7, 'EasyFly', 'Daniel', 'Hernandez', '3645768353', 'Avenida 25', 'Tolima', 'Colombia', 'Laura');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (8, 'LAN Colombia', 'Olivia', 'Morales', '4574676853', 'Avenida 2', 'Bolívar', 'Colombia', 'Mayra');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (9, 'LANCO', 'Andrea', 'Cardenas', '54756967645', 'Calle 45', 'Risaralda', 'Colombia', 'Danna');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (10, 'LAS', 'Sophia', 'Del Valle', '765434486', 'Carrera 425', 'Nariño', 'Colombia', 'Daniel');
 
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (11, 'PQR Corporation', 'Robert', 'Wilson', 9876534667, 'Avenida 23', 'Norte de Santander', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (12, 'XYZ Inc.', 'Emma', 'Smith', 9534567876, 'Avenida 52', 'Norte de Santander', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (13, 'XYZ Inc.', 'Michael', 'Smith', 98765356657, 'Carrera 12', 'Magdalena', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (14, 'PQR Corporation', 'Andres', 'Florez', 4356567787654, 'Calle 12', 'Meta', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (15, 'DEF Corporation', 'William', 'Thomson', 34678765435, 'Avenida 2', 'Tolima', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (16, 'XYZ Inc.', 'Olivia', 'Torres', 3458654543, 'Carrera 31', 'Tolima', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (17, 'PQR Corporation', 'Daniel', 'Florez', 98765345345, 'Carrera 1', 'Huila', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (18, 'DEF Corporation', 'Eva', 'Wilson', 54659876345, 'Avenida 31', 'Huila', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (19, 'PQR Corporation', 'Daniela', 'Florez', 346796756, 'Calle 64', 'Quindío', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (20, 'XYZ Inc.', 'Maria', 'Arguello', 323567646547, 'Carrera 34', 'Cauca', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (11, 'Satena', 'Robert', 'Wilson', '9876534667', 'Avenida 23', 'Norte de Santander', 'Colombia', 'Luisa');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (12, 'Searca', 'Emma', 'Smith', '9534567876', 'Avenida 52', 'Norte de Santander', 'Colombia', 'Manuel');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (13, 'Dolmen', 'Michael', 'Smith', '98765356657', 'Carrera 12', 'Magdalena', 'Colombia', 'Jose');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (14, 'Daiko Publicidad', 'Andres', 'Florez', '4356567787654', 'Calle 12', 'Meta', 'Colombia', 'Daniela');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (15, 'Banacol', 'William', 'Thomson', '34678765435', 'Avenida 2', 'Tolima', 'Colombia', 'Angel');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (16, 'Mac Pollo', 'Olivia', 'Torres', '3458654543', 'Carrera 31', 'Tolima', 'Colombia', 'Angela');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (17, 'FlorHuila', 'Daniel', 'Florez', '98765345345', 'Carrera 1', 'Huila', 'Colombia', 'Jeison');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (18, 'El Espectador', 'Eva', 'Wilson', '54659876345', 'Avenida 31', 'Huila', 'Colombia', 'Caroline');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (19, 'Proban', 'Daniela', 'Florez', '346796756', 'Calle 64', 'Quindío', 'Colombia', 'Noah');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (20, 'Uniban', 'Maria', 'Arguello', '323567646547', 'Carrera 34', 'Cauca', 'Colombia', 'Camilo');
 
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (21, 'XYZ Ltd.', 'Michael', 'Wilson', 23155656441, 'Calle 75', 'Córdoba', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (22, 'DEF Corporation', 'Marcela', 'Corrales', 1234576546, 'Carrera 46', 'Sucre', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (23, '123 Industries', 'Flor', 'Fernandez', 13456756453, 'Calle 85', 'Córdoba', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (24, 'XYZ Ltd.', 'James', 'Vallego', 87652344556, 'Calle 97', 'Chocó', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (25, 'ABC Corporation', 'Emily', 'Torres', 98765345336, 'Avenida 64', 'Chocó', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (26, 'DEF Corporation', 'Javier', 'Taylor', 34537764563, 'Avenida 13', 'Arauca', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (27, 'XYZ Ltd.', 'Mariana', 'Chavez', 24679778676, 'Carrera 134', 'Casanare', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (28, 'ABC Corporation', 'Noah', 'Rivera', 54684534545, 'Calle 46', 'Putumayo', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (29, 'XYZ Ltd.', 'Laura', 'Johnson', 24578954563, 'Avenida 46', 'Putumayo', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (30, 'DEF Corporation', 'Miriam', 'Brown', 15678986545, 'Calle 13', 'Putumayo', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (21, 'Coltabaco', 'Michael', 'Wilson', '23155656441', 'Calle 75', 'Córdoba', 'Colombia', 'Jenny');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (22, 'Manuelita', 'Marcela', 'Corrales', '12478968946', 'Carrera 46', 'Sucre', 'Colombia', 'Marlon');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (23, 'Colpatria', 'Flor', 'Fernandez', '13456756453', 'Calle 85', 'Córdoba', 'Colombia', 'Carlos');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (24, 'Banco Caja Social', 'James', 'Vallego', '87652344556', 'Calle 97', 'Chocó', 'Colombia', 'Julio');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (25, 'Banco Popular', 'Emily', 'Torres', '98765345336', 'Avenida 64', 'Chocó', 'Colombia', 'Molly');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (26, 'Serfinanza', 'Javier', 'Taylor', '34537764563', 'Avenida 13', 'Arauca', 'Colombia', 'Michael');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (27, 'Banco Itau', 'Mariana', 'Chavez', '24679778676', 'Carrera 134', 'Casanare', 'Colombia', 'Catalina');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (28, 'Banco Mundo Mujer', 'Molly', 'Rivera', '54684534545', 'Calle 46', 'Putumayo', 'Colombia', 'Paula');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (29, 'Citibank', 'Laura', 'Johnson', '24578954563', 'Avenida 46', 'Putumayo', 'Colombia', 'Gloria');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (30, 'Procredit', 'Miriam', 'Brown', '15678986545', 'Calle 13', 'Putumayo', 'Colombia', 'Dayan');
 
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (31, '123 Industries', 'Milly', 'Moore', 234567987652, 'Avenida 56', 'Vichada', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (32, 'XYZ Ltd.', 'Claudia', 'Bastidas', 243578563234, 'Calle 46', 'Valle del Cauca', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (33, '123 Industries', 'Paola', 'Calixto', 15678654544, 'Carrera 65', 'Valle del Cauca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (34, 'XYZ Ltd.', 'Julio', 'Anderson', 134678556758, 'Avenida 46', 'Boyacá', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (35, 'XYZ Ltd.', 'Samy', 'Torres', 156787876544, 'Avenida 75', 'Cundinamarca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (36, '123 Industries', 'Jack', 'Jimenez', 98765356453, 'Carrera 54', 'Antioquia', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (37, 'ABC Corporation', 'Dulce', 'Hernandez', 34567687865, 'Carrera 32', 'Cundinamarca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (38, 'XYZ Inc.', 'Rosa', 'Delgado', 1345789876, 'Avenida 75', 'Cundinamarca', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (39, 'ABC Corporation', 'Gloria', 'Cardenas', 9876425446, 'Calle 65', 'Tolima', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (40, '123 Industries', 'Cristian', 'Anderson', 03456866453, 'Avenida 57', 'Tolima', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (31, 'Banco Falabella', 'Milly', 'Moore', '234567987652', 'Avenida 56', 'Vichada', 'Colombia', 'Juan');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (32, 'Bancamia', 'Claudia', 'Bastidas', '243578563234', 'Calle 46', 'Valle del Cauca', 'Colombia', 'Sara');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (33, 'Alpina S.A', 'Paola', 'Calixto', '15678654544', 'Carrera 65', 'Valle del Cauca', 'Colombia', 'Micaela');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (34, 'Postobon', 'Julio', 'Anderson', '134678556758', 'Avenida 46', 'Boyacá', 'Colombia', 'James');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (35, 'Zenu', 'Samy', 'Torres', '156787876544', 'Avenida 75', 'Cundinamarca', 'Colombia', 'David');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (36, 'Quala', 'Jack', 'Jimenez', '98765356453', 'Carrera 54', 'Antioquia', 'Colombia', 'Sofia');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (37, 'Alsec', 'Dulce', 'Hernandez', '34567687865', 'Carrera 32', 'Cundinamarca', 'Colombia', 'Critian');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (38, 'Bavaria', 'Rosa', 'Delgado', '1345789876', 'Avenida 75', 'Cundinamarca', 'Colombia', 'Marco');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (39, 'Pasta Doria', 'Gloria', 'Cardenas', '9876425446', 'Calle 65', 'Tolima', 'Colombia', 'Lady');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (40, 'Colombia S.A.', 'Cristian', 'Anderson', '03456866453', 'Avenida 57', 'Tolima', 'Colombia', 'Manuela');
 
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (41, 'XYZ Inc.', 'Pablo', 'Leal', 23446764564, 'Carrera 23', 'Tolima', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (43, 'ABC Corporation', 'Rodrigo', 'Morales', 36578764523, 'Carrera 43', 'Cundinamarca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (44, 'GHI Industries', 'Paula', 'Diaz', 3468765422, 'Avenida 76', 'Santander', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (45, 'GHI Industries', 'David', 'Cardenas', 32567765453, 'Calle 13', 'Arauca', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (46, 'XYZ Inc.', 'Micaela', 'Chavez', 25467653634, 'Carrera 23', 'Casanare', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (47, 'ABC Corporation', 'Sara', 'Johnson', 4534677653, 'Calle 57', 'Santander', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (48, 'UVW Industries', 'James', 'Brown', 2435767454, 'Carrera 34', 'Sucre', 'Colombia', 'Bob');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (49, 'XYZ Ltd.', 'Tifany', 'Calixto', 345676542, 'Carrera 23', 'Risaralda', 'Colombia', 'Alice');
-INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (50, 'ACME Corporation', 'Camilo', 'Bolivar', 235678987, 'Avenida 23', 'Sucre', 'Colombia', 'Bob');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (41, 'Casa Luker', 'Pablo', 'Leal', '23446764564', 'Carrera 23', 'Tolima', 'Colombia', 'Harold');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (43, 'Cafam', 'Rodrigo', 'Morales', '36578764523', 'Carrera 43', 'Cundinamarca', 'Colombia', 'Margarita');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (44, 'Valorem', 'Paula', 'Diaz', '3468765422', 'Avenida 76', 'Santander', 'Colombia', 'Gabriel');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (45, 'Conalvias', 'David', 'Cardenas', '32567765453', 'Calle 13', 'Arauca', 'Colombia', 'Norman');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (46, 'Cotecmar', 'Micaela', 'Chavez', '25467653634', 'Carrera 23', 'Casanare', 'Colombia', 'Jackson');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (47, 'Integral S.A.', 'Sara', 'Johnson', '4534677653', 'Calle 57', 'Santander', 'Colombia', 'Sally');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (48, 'La Rivera', 'James', 'Brown', '2435767454', 'Carrera 34', 'Sucre', 'Colombia', 'Mike');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (49, 'Fedco', 'Tifany', 'Calixto', '345676542', 'Carrera 23', 'Risaralda', 'Colombia', 'Cristina');
+INSERT INTO cliente (id_cliente, empresa, nombre, apellido, telefono, direccion, departamento, pais, empleado_atiende) VALUES (50, 'El Tiempo', 'Camilo', 'Bolivar', '235678987', 'Avenida 23', 'Sucre', 'Colombia', 'Benja');
