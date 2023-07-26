@@ -52,7 +52,7 @@ CREATE TABLE cliente(
     correo VARCHAR (50) UNIQUE NOT NULL,
     municipio VARCHAR (20),
     departamento VARCHAR (20),
-    pais VARCHAR (20) CHECK (pais='colombia'), --CHECK permite limitar a una respuesta
+    pais VARCHAR (20) CHECK (pais='colombia'),
     creador TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 

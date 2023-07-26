@@ -8,27 +8,6 @@ CREATE TABLE aprendices(
     creado TIMESTAMP
 );
 
-CREATE TABLE aprendices(
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre_Usuario VARCHAR (50) UNIQUE NOT NULL,
-    Edad INT UNSIGNED NOT NULL,
-    Estado ENUM("Activo","Inactivo") DEFAULT "Inactivo",
-    Creado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Tatiana Angarita", 19, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Maria Paula Embus", 21, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Gloria Cardenas", 32, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Daniel Florez", 20, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Angel Herrera", 20, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Daniela Florez", 20, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Samuel Martinez", 22, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Johan Bastidas", 21, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Jhon Coral", 33, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Andrea Collazos", 30, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Marcela Quintero", 26, "Activo");
-INSERT INTO aprendices (Nombre_Usuario, Edad, Estado) VALUE("Jhonny Collar", 24, "Activo");
-
 INSERT INTO aprendices (id, nombre_apellido, correo, edad, direccion, ciudad, estado) VALUES(1077840045, "Tatiana Angarita", "tatianaangarita150@gmail.com", 19, "Carrera 17 #2A04", "Garzon", "Activo");
 INSERT INTO aprendices (id, nombre_apellido, correo, edad, direccion, ciudad, estado) VALUES(107346756, "Maria Embus", "mariaembus@gmail.com", 21, "Carrera 14 #26", "Garzon", "Activo");
 INSERT INTO aprendices (id, nombre_apellido, correo, edad, direccion, ciudad, estado) VALUES(1053655745, "Angel Herrera", "herreraangel@gmail.com", 20, "Calle 47", "Bogota", "Activo");
