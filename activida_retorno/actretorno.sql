@@ -15,16 +15,19 @@ INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) 
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (3, 'Yessica', 'Morales', 'Calle 75', '3226753223', 'morayessica25@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (4, 'Michael', 'Bastidas', 'Calle 87', '3123421160', 'bastidasmichaell@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (5, 'Karla', 'Leal', 'Avenida 5', '3116438861', 'lealkarla12@gmail.com');
+
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (6, 'Camila', 'Molina', 'Calle 74', '3216803465', 'camolina50@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (7, 'Cristhian', 'Florez', 'Avenida 35', '3167438631', 'florezcristhian49@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (8, 'Jhon', 'Coral', 'Carrera 34', '3115034403', 'jhoncoral30x@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (9, 'Gloria', 'Cardenas', 'Carrera 97', '3219842003', 'cardenasgloria3@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (10, 'Anna', 'Rodriguez', 'Calle 17', '3239894312', 'annarodriguezzz@gmail.com');
+
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (11, 'Pedro', 'Perez', 'Avenida 43', '3200495502', 'pedroperezz3@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (12, 'Laura', 'Garcia', 'Avenida 67', '3219943128', '89lauragarcia@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (13, 'Andres', 'Lopez', 'Avenida 32', '3209035221', 'alopezandres35@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (14, 'Sofia', 'Cuellar', 'Carrera 91', '3110934771', 'cuellarsofia15@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (15, 'Mario', 'Gomez', 'Calle 4', '3206425445', 'gomezmario09@gmail.com');
+
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (16, 'Emma', 'Wilson', 'Calle 12', '3134670890', 'emmawilson30e@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (17, 'Olivia', 'Torres', 'Carrera 23', '3220984583', 'torresolivi203@gmail.com');
 INSERT INTO CLIENTE (id_cliente, nombre, apellido, direccion, telefono, correo) VALUES (18, 'Javier', 'Chavez', 'Avenida 78', '3219005848', '53chavezjavier@gmail.com');
@@ -183,7 +186,7 @@ DELETE FROM VENTAS WHERE id_venta = 475;
 /*PRODUCTOS*/
 
 DELETE FROM PRODUCTOS WHERE id_producto = 6473;
-DELETE FROM PRODUCTOS WHERE id_producto = 3489;
+DELETE FROM PRODUCTOS WHERE id_producto = 3489; 
 DELETE FROM PRODUCTOS WHERE id_producto = 4126;
 DELETE FROM PRODUCTOS WHERE id_producto = 7237;
 DELETE FROM PRODUCTOS WHERE id_producto = 4945;
